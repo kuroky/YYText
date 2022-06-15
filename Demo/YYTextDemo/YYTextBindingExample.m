@@ -62,12 +62,12 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"sjobs@apple.com, apple@apple.com, banana@banana.com, pear@pear.com "];
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"sjobs@apple.com, apple@apple.com, banana@banana.com, pear@pear.com, pearc@psear.com, 张三 "];
     text.yy_font = [UIFont systemFontOfSize:17];
     text.yy_lineSpacing = 5;
     text.yy_color = [UIColor blackColor];
     
-    YYTextView *textView = [YYTextView new];
+    YYTextView *textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 100, 424, 200)];
     textView.attributedText = text;
     textView.textParser = [YYTextExampleEmailBindingParser new];
     textView.size = self.view.size;
